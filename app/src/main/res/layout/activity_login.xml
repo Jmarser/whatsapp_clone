@@ -71,17 +71,26 @@
                 android:id="@+id/til_password_login"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="24dp"
+                android:layout_marginBottom="12dp"
                 app:endIconMode="password_toggle"
-                app:passwordToggleEnabled="false"
                 app:startIconDrawable="@drawable/ic_password">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="password"
-                    android:inputType="textPassword"/>
+                    android:inputType="textPassword"
+                    android:imeOptions="actionGo"/>
             </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_recovery_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Olvidates tu password?"
+                android:textAlignment="textStart"
+                android:textStyle="bold|italic"
+                android:clickable="true"/>
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
@@ -92,6 +101,7 @@
                 android:textStyle="bold"
                 app:cornerRadius="10dp"
                 android:elevation="10dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginBottom="12dp"/>
 
             <TextView
@@ -101,7 +111,8 @@
                 android:text="Crear nueva cuenta"
                 android:textAlignment="textEnd"
                 android:textStyle="bold|italic"
-                android:clickable="true"/>
+                android:clickable="true"
+                android:focusable="true" />
 
         </LinearLayout>
 

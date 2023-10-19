@@ -13,6 +13,9 @@
         android:theme="@style/Theme.WhatsappClone"
         tools:targetApi="31">
         <activity
+            android:name=".createAccount.CreateAccountActivity"
+            android:exported="false" />
+        <activity
             android:name=".login.LoginActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
@@ -24,9 +27,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"></activity>
     </application>
 
 </manifest>
