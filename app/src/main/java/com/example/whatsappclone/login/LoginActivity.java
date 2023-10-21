@@ -1,13 +1,17 @@
 package com.example.whatsappclone.login;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
-import com.example.whatsappclone.R;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.whatsappclone.createAccount.CreateAccountActivity;
 import com.example.whatsappclone.databinding.ActivityLoginBinding;
+import com.example.whatsappclone.utils.Constantes;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -26,5 +30,7 @@ public class LoginActivity extends AppCompatActivity {
 
         // ClickListener sin necesidad de lógica
         binding.tvNuevaCuenta.setOnClickListener(view -> startActivity(new Intent(this, CreateAccountActivity.class)));
+        
     }
+
 }
